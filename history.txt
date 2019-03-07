@@ -1,0 +1,85 @@
+    1  yum -y update
+    2  sudo yum -y update
+    3  rvm --version
+    4  rvm install 2.4.0
+    5  git clone https://github.com/sureshkumar1996/hw-acceptance-unit-test-cycle.git
+    6  cd hw-acceptance-unit-test-cycle/rottenpotatoes/
+    7  ls
+    8  bundle install --without production
+    9  rake db:migrate
+   10  bundle exec rake db:setup
+   11   rails server -p $PORT -b $IP
+   12  rake db:test:prepare
+   13  rspec
+   14  cucumber
+   15  cucumber features/find_movie_director.feature 
+   16  rails generate migration AddDirectorToMovies director:string
+   17  rspec
+   18  rake db:test:prepare
+   19  cucumber features/find_movie_director.feature 
+   20  cucumber 
+   21  rake db:migrate
+   22  rake db:test:prepare
+   23  cucumber
+   24  cucumber features/find_movie_director.feature 
+   25  cucumber features/find_movie_director.feature > Output.txt
+   26  vim Output.txt 
+   27  ls
+   28  heroku create
+   29  nvm i v8 
+   30  npm install -g heroku
+   31  heroku
+   32  heroku login
+   33  git init
+   34  git add .
+   35  git commit -m "Cucumber Scneraios completed"
+   36  heroku create
+   37  git push heroku master
+   38  heroku run rake db:migrate
+   39  rm Gemfile.lock 
+   40  vi Gemfile 
+   41  bundle install --without production
+   42  git push heroku master
+   43  heroku run rake db:migrate
+   44  heroku open
+   45  git push heroku master --force
+   46  bundle install --without production
+   47  git status
+   48  git add .
+   49  git commit -am "Testing"
+   50  git push heroku master
+   51  bundle clean --force
+   52  bundle install --without production
+   53  gem install pg -v '0.21.0' --source 'https://rubygems.org/'
+   54  sudo gem install pg -v '0.21.0' --source 'https://rubygems.org/'
+   55  gem uninstall pg
+   56  sudo gem uninstall pg
+   57  sudo gem install pg -v '0.21.0' --source 'https://rubygems.org/'
+   58  bundle update
+   59  yum install ruby-dev
+   60  sudo yum install ruby-dev
+   61  bundle install --without production
+   62  sudo yum install postgresql postgresql-server postgresql-devel postgresql-contrib postgresql-docs
+   63  bundle install --without production
+   64  git push heroku master
+   65  git add .
+   66  git commit -am "Deploy"
+   67  git push heroku master
+   68  heroku open
+   69  heroku
+   70  heroku run rake db:migrate
+   71  heroku run rake db:seed
+   72  heroku open
+   73  git status
+   74  rake rails:update:bin
+   75   
+   76  git add .
+   77  git commit -am "Deploy 1"
+   78  git push heroku master
+   79  heroku run rake db:migrate
+   80  heroku open
+   81  cucumber
+   82  find . -name "*_spec.rb"
+   83  rspec
+   84  cucumber
+   85  history >> history.txt
